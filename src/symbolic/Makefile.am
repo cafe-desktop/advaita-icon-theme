@@ -56,6 +56,7 @@ uninstall-local:
 			rm -f $(DESTDIR)/$(themedir)/$$size/$$context/$$name; \
 		done; \
 	done
+	find $(top_builddir)/$(SVGOUTDIR) -type f -name '.placeholder' -delete
 
 EXTRA_DIST =			\
 	$(icon_in_files)
