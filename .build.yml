@@ -4,6 +4,7 @@
 requires:
   debian:
     - aptitude
+    - autoconf
     - clang-tools
     - expect #required for unbuffer
     - gettext
