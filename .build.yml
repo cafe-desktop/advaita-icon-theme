@@ -12,6 +12,7 @@ requires:
     - libgtk-3-bin
     - librsvg2-bin
     - librsvg2-common
+    - make
 
 build_scripts:
   - ./make-scanbuild
