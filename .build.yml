@@ -1,0 +1,16 @@
+##########################################################
+# THE FOLLOWING LINES IS USED BY docker-build
+##########################################################
+requires:
+  debian:
+    - aptitude
+    - clang-tools
+    - expect #required for unbuffer
+    - gettext
+    - pkg-config
+    - libgtk-3-bin
+    - librsvg2-bin
+    - librsvg2-common
+
+build_scripts:
+  - ./make-scanbuild
