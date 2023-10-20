@@ -117,7 +117,7 @@ class ContentHandler(xml.sax.ContentHandler):
                 height = rect['height']
                 id = rect['id']
 
-                dir = os.path.join("Adwaita", "%sx%s" % (width, height), self.context)
+                dir = os.path.join("Advaita", "%sx%s" % (width, height), self.context)
                 outfile = os.path.join(dir, self.icon_name+'.png')
                 if not os.path.exists(dir):
                     os.makedirs(dir)
@@ -141,8 +141,8 @@ class ContentHandler(xml.sax.ContentHandler):
         self.chars += chars.strip()
 
 if len(sys.argv) == 1:
-    if not os.path.exists('Adwaita'):
-        os.mkdir('Adwaita')
+    if not os.path.exists('Advaita'):
+        os.mkdir('Advaita')
     print ('Rendering from SVGs in', SRC)
     for file in os.listdir(SRC):
         if file[-4:] == '.svg':
