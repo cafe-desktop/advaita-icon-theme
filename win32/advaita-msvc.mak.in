@@ -39,7 +39,7 @@ NULL=
 ICON_SUBDIR=share\icons\Adwaita
 GDK_PIXBUF_MOD_VERSION=2.10.0
 ADWAITA_VERSION=@VERSION@
-ADWAITA_PC_FILES=adwaita-icon-theme.pc
+ADWAITA_PC_FILES=advaita-icon-theme.pc
 
 # Generate the NMake Makefile modules for the listing of subdirs for each icon size
 !if [@for /f %s in ('dir /b /on $(SRCROOTDIR)\Adwaita') do @if not "%s" == "cursors" (@echo SIZE_%s_dirs = \> %s.mak) & (@for /f %d in ('dir /b $(SRCROOTDIR)\Adwaita\%s') do @echo %s/%d \>> %s.mak) & @echo ^$(NULL) >> %s.mak]
@@ -149,9 +149,9 @@ dir_list.py:
 
 .SUFFIXES: .svg .png
 
-$(ADWAITA_PC_FILES): ..\adwaita-icon-theme.pc.in
+$(ADWAITA_PC_FILES): ..\advaita-icon-theme.pc.in
 	@echo Generating $@...
-	$(PYTHON) adwaitapc.py --prefix=$(PREFIX) --version=$(ADWAITA_VERSION)
+	$(PYTHON) advaitapc.py --prefix=$(PREFIX) --version=$(ADWAITA_VERSION)
 
 # Copy the icon and cursor files, and convert the SVG symbolic icons if:
 # -The gtk-encode-symbolic-svg tool is found in $(PREFIX)\bin -AND-
@@ -178,7 +178,7 @@ install: index.theme $(ADWAITA_PC_FILES)
 					@($(GTK_ENCODE_SYMBOLIC_SVG) $(SRCROOTDIR)\Adwaita\scalable\%d\%f	\
 					 %z -o $(PREFIX)\$(ICON_SUBDIR)\%z\%d))))
 	if not exist $(PREFIX)\share\pkgconfig mkdir $(PREFIX)\share\pkgconfig
-	copy adwaita-icon-theme.pc $(PREFIX)\share\pkgconfig
+	copy advaita-icon-theme.pc $(PREFIX)\share\pkgconfig
 	@for %x in ($(GTK_UPDATE_ICON_CACHE) $(GTK_UPDATE_ICON_CACHE).exe) do if exist %x	\
 	@(echo Update icon cache...) &											\
 	@($(GTK_UPDATE_ICON_CACHE) -q $(PREFIX)\$(ICON_SUBDIR))
@@ -188,6 +188,6 @@ clean:
 	@-del index.theme
 	@-del index.theme.tmp
 	@-del dir_list.py
-	@-del adwaita-icon-theme.pc
+	@-del advaita-icon-theme.pc
 	@-for %a in (*.pyc) do @del *.pyc
 	@-if exist __pycache__ rmdir /s /q __pycache__

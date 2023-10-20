@@ -220,10 +220,10 @@ uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
 
 pkgconfigdir = $(datadir)/pkgconfig
-pkgconfig_DATA = adwaita-icon-theme.pc
+pkgconfig_DATA = advaita-icon-theme.pc
 
 EXTRA_DIST =			\
-	adwaita-icon-theme.pc.in  \
+	advaita-icon-theme.pc.in  \
 	Adwaita			\
 	COPYING_CCBYSA3		\
 	COPYING_LGPL		\
