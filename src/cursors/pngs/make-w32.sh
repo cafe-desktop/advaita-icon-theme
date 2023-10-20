@@ -1,13 +1,13 @@
 #!/bin/sh
 # $@ is for the caller to be able to supply arguments to anicursorgen (-s, in particular)
 GEN=../anicursorgen.py\ "$@"
-for theme in Adwaita Adwaita-Large Adwaita-ExtraLarge
+for theme in Advaita Advaita-Large Advaita-ExtraLarge
 do
   mkdir -p ../../../$theme/cursors
-  if test "x$theme" = "xAdwaita-Large"
+  if test "x$theme" = "xAdvaita-Large"
   then
     s=.s1
-  elif test "x$theme" = "xAdwaita-ExtraLarge"
+  elif test "x$theme" = "xAdvaita-ExtraLarge"
   then
     s=.s2
   else

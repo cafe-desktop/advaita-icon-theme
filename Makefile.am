@@ -4,21 +4,21 @@ SUBDIRS = src win32
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-cursordir = $(datadir)/icons/Adwaita/cursors
+cursordir = $(datadir)/icons/Advaita/cursors
 
 # Install .cur/.ani on Windows and X cursors everywhere else
-win_cursors = $(wildcard $(srcdir)/Adwaita/cursors/*.cur) $(wildcard $(srcdir)/Adwaita/cursors/*.ani)
+win_cursors = $(wildcard $(srcdir)/Advaita/cursors/*.cur) $(wildcard $(srcdir)/Advaita/cursors/*.ani)
 if PLATFORM_WIN32
 cursor_DATA = $(win_cursors)
 else
-cursor_DATA = $(filter-out $(win_cursors), $(wildcard $(srcdir)/Adwaita/cursors/*))
+cursor_DATA = $(filter-out $(win_cursors), $(wildcard $(srcdir)/Advaita/cursors/*))
 endif
 
 if ENABLE_L_XL_VARIANTS
-cursorldir = $(datadir)/icons/Adwaita-Large/cursors
-cursorl_DATA = $(wildcard $(srcdir)/Adwaita-Large/cursors/*)
-cursorxldir = $(datadir)/icons/Adwaita-ExtraLarge/cursors
-cursorxl_DATA = $(wildcard $(srcdir)/Adwaita-ExtraLarge/cursors/*)
+cursorldir = $(datadir)/icons/Advaita-Large/cursors
+cursorl_DATA = $(wildcard $(srcdir)/Advaita-Large/cursors/*)
+cursorxldir = $(datadir)/icons/Advaita-ExtraLarge/cursors
+cursorxl_DATA = $(wildcard $(srcdir)/Advaita-ExtraLarge/cursors/*)
 else
 cursorldir =
 cursorl_DATA =
@@ -32,7 +32,7 @@ theme_DATA = $(theme_in_files:.theme.in=.theme)
 THEME_DIRS=$(shell SIZES="$(install_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$(SVGOUTDIR)/$$size/* -type d`; do printf "$$dir,"; done; done; echo "scalable/actions,scalable/apps,scalable/categories,scalable/devices,scalable/emblems,scalable/emotes,scalable/mimetypes,scalable/places,scalable/status,scalable/legacy,scalable/ui,scalable-up-to-32/status,")
 
 %.theme: %.theme.in $(SVGOUTDIR) Makefile
-	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/Adwaita/##g'`"; \
+	dirs="`echo $(THEME_DIRS) | sed -e 's#$(srcdir)/Advaita/##g'`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	for dir in `echo $$dirs | sed -e "s/,/ /g"`; do \
 		sizefull="`dirname $$dir`"; \
@@ -224,7 +224,7 @@ pkgconfig_DATA = advaita-icon-theme.pc
 
 EXTRA_DIST =			\
 	advaita-icon-theme.pc.in  \
-	Adwaita			\
+	Advaita			\
 	COPYING_CCBYSA3		\
 	COPYING_LGPL		\
 	README.md		\

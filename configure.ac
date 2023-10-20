@@ -18,10 +18,10 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
 # Define the toplevel path here
-AC_SUBST(themedir, "\${datadir}/icons/Adwaita")
+AC_SUBST(themedir, "\${datadir}/icons/Advaita")
 
 # Input and Output dirs for the rendering
-AC_SUBST(SVGOUTDIR, "Adwaita")
+AC_SUBST(SVGOUTDIR, "Advaita")
 AC_SUBST(SVGSRCDIR, "src/symbolic")
 
 # Icon sizes we want to install
