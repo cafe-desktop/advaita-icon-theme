@@ -11,7 +11,7 @@ instructions on building this package with Visual C++:
 
 https://live.gnome.org/GTK%2B/Win32/MSVCCompilationOfGTKStack
 
-The adwaita-msvc.mak is an NMake Makefile that is meant to be used to generate
+The advaita-msvc.mak is an NMake Makefile that is meant to be used to generate
 the index.theme file that is needed for installation of this icon theme
 package, as well as copying and processing the icon files so that they
 will be ready for use for GTK+ applications.
@@ -34,9 +34,9 @@ For optimal results, you will also need:
  ship the SVG GDK-Pixbuf loader nor the libRSVG DLL (which are both required
  otherwise).
 
-Run 'nmake /f adwaita-msvc.mak' to generate the needed index.theme file.
+Run 'nmake /f advaita-msvc.mak' to generate the needed index.theme file.
 PYTHON=xxx can be specified on the command line if your Python interpretor is
-not in your PATH.  Run 'nmake /f adwaita-msvc.mak install' to copy the
+not in your PATH.  Run 'nmake /f advaita-msvc.mak install' to copy the
 generated index.theme, as well as all the icon and cursor files into
 $(PREFIX)\share\icons, and process them if the optional tools are found, so
 that the icons will be ready for use by GTK+-using applications.
@@ -50,10 +50,10 @@ currently supported.
 Set up the source tree as follows under some arbitrary top
 folder <root>:
 
-<root>\<this-adwaita-icon-theme-source-tree>
+<root>\<this-advaita-icon-theme-source-tree>
 <root>\<Visual Studio Version>\<PlatformName>
 
 *this* file you are now reading is thus located at
-<root>\<this-adwaita-icon-theme-source-tree>\win32\README.txt
+<root>\<this-advaita-icon-theme-source-tree>\win32\README.txt
 
 --Chun-wei Fan <fanc999@gmail.com>

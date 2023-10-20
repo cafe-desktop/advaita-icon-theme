@@ -1,8 +1,8 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([adwaita-icon-theme], [41.0],
-        [http://bugzilla.gnome.org/enter_bug.cgi?product=adwaita-icon-theme])
+AC_INIT([advaita-icon-theme], [41.0],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=advaita-icon-theme])
 AC_CANONICAL_HOST
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([index.theme.in])
@@ -80,13 +80,13 @@ AM_CONDITIONAL([ENABLE_L_XL_VARIANTS], [test x$enable_l_xl_variants = xyes])
 
 AC_CONFIG_FILES([
 Makefile
-adwaita-icon-theme.pc
+advaita-icon-theme.pc
 src/Makefile
 src/fullcolor/Makefile
 src/symbolic/Makefile
 src/spinner/Makefile
 win32/Makefile
-win32/adwaita-msvc.mak
+win32/advaita-msvc.mak
 ])
 
 AC_OUTPUT

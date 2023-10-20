@@ -1,6 +1,6 @@
 EXTRA_DIST =	\
-	adwaita-msvc.mak	\
-	adwaitapc.py		\
+	advaita-msvc.mak	\
+	advaitapc.py		\
 	apply_dirs.py		\
 	detectenv-msvc.mak	\
 	README.txt		\
