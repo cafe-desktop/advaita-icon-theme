@@ -212,8 +212,8 @@ install-data-hook:
 		$(LN_S) -f  fd_double_arrow$$cur	nesw-resize$$cur && \
 		$(LN_S) -f  bd_double_arrow$$cur	nwse-resize$$cur; \
 	done
-	if test -z "$(DESTDIR)" && test -n "$(GTK_UPDATE_ICON_CACHE)" ; then \
-		$(GTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
+	if test -z "$(DESTDIR)" && test -n "$(CTK_UPDATE_ICON_CACHE)" ; then \
+		$(CTK_UPDATE_ICON_CACHE) -q $(DESTDIR)$(themedir); \
 	fi
 
 uninstall-hook:
