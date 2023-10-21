@@ -27,7 +27,7 @@
   - remove legacy fullcolor weather icons
 3.37.2
   - symbolic: night light metaphor (issue 76)
-  - symbolic: larger expanders (gtk#2656)
+  - symbolic: larger expanders (ctk#2656)
   - scripts -- rendrable with inkscape 1.0 (issue 57)
 3.36.1
   - symbolic: user-not-tracked bugfix (issue 81)
@@ -86,7 +86,7 @@
 3.31.91
   - symbolic: folder-download, inode-directory
   - symbolic: privacy, dnd, phone device icons
-  - symbolic: new ui context for things that aren't strictly icons. Might go into gtk
+  - symbolic: new ui context for things that aren't strictly icons. Might go into ctk
   - symbolic: emoji category tweaks
   - symbolic: mail-reply, battery status (issue #6)
   - symbolic: action icons eg rotation
@@ -259,7 +259,7 @@
   - translations
 
 3.15.1
-  - no hard dep on gtk-update-icon-cache (bug #739290)
+  - no hard dep on ctk-update-icon-cache (bug #739290)
   - missing icons needed for HC theme (bug #732511)
   - updated translations
 
@@ -269,7 +269,7 @@
   - translation updates
 
 3.13.91
-  - checkbox/radio assets for gtk part of the symbolic icon theme
+  - checkbox/radio assets for ctk part of the symbolic icon theme
   - updated cursors. 16 frame animation for fluidity (bug #734429)
   - grid alignment for dictionary
   - highres input-gaming (bug #735160)
@@ -289,14 +289,14 @@
   - translation updates
 
 3.13.3
-  - symbolic icons for use in gtk theme instead of image assets
+  - symbolic icons for use in ctk theme instead of image assets
   - spinner that only scales up to 32
   - naming fixes
   - sync metaphors between fullcolor and symbolic
   - fix a few misrendering of symbolic icons
   
 3.13.2
-  - checkbox and radio as icons (for popovers and menus in gtk)
+  - checkbox and radio as icons (for popovers and menus in ctk)
   - dropped legacy icon name mapping using symlinks (bug #728984)
   - generic document-new (simple scan)
   - spinner as icon (process-working)
