@@ -22,7 +22,7 @@ There is a couple of things the icon author needs to be aware of and a few thing
 
 Symblic Preview doesn't convert strokes to paths yet, so you need to do it manually for now in Inkscape (`Path -> Stroke to Path`).
 
-Gtk doesn't care about the colors you define for the icon. They are recolored at runtime. If you need portions of icons to have a color, you need to include a `class` attribute to the shape or group and set it to one of the three values below. 
+Ctk doesn't care about the colors you define for the icon. They are recolored at runtime. If you need portions of icons to have a color, you need to include a `class` attribute to the shape or group and set it to one of the three values below. 
 
 - `warning` - this maps to ctk `@warning_color`
 - `error` - maps to `@error_color`
