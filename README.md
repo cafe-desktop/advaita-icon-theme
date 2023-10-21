@@ -16,7 +16,7 @@ While many legacy symbolics only live as the exported individual SVGS in `Advait
 Do note that no new additions should be made unless very thoroughly discussed. *a-i-t* is the wrong way to reuse icon assets (no API, false promise of stability).
 
 ### Recoloring
-The color of the icon set is defined at runtime by the gtk theme. Every single icon from the set is actually embedded inside an xml container that has a stylesheet overriding the colors.
+The color of the icon set is defined at runtime by the ctk theme. Every single icon from the set is actually embedded inside an xml container that has a stylesheet overriding the colors.
 
 There is a couple of things the icon author needs to be aware of and a few things s/he can make use of. The stylesheet is setting the color of the fill for all rectangles and paths. **DO NOT** leave any rectangles or paths with no fill/stroke thinking it's invisible.
 
@@ -24,6 +24,6 @@ Symblic Preview doesn't convert strokes to paths yet, so you need to do it manua
 
 Gtk doesn't care about the colors you define for the icon. They are recolored at runtime. If you need portions of icons to have a color, you need to include a `class` attribute to the shape or group and set it to one of the three values below. 
 
-- `warning` - this maps to gtk `@warning_color`
+- `warning` - this maps to ctk `@warning_color`
 - `error` - maps to `@error_color`
 - `success` - maps to `@success_color`

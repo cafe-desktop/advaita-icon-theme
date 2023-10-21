@@ -22,12 +22,12 @@ The required dependencies are as follows:
  sources or obtained from the installers from http://www.python.org.
 
 For optimal results, you will also need:
--The gtk-update-icon-cache tool, which can be found by building the latest CTK+
+-The ctk-update-icon-cache tool, which can be found by building the latest CTK+
  2.24.x/3.18.x (or later) package.
  The tool should be placed in $(PREFIX)\bin.
 
 -PNG versions of the SVG symbolic icons are generated in 16x16, 24x24, 32x32,
- 48x48, 64x64 and 96x96 sizes if the gtk-encode-symbolic-svg tool is found in
+ 48x48, 64x64 and 96x96 sizes if the ctk-encode-symbolic-svg tool is found in
  $(PREFIX)\bin, and the SVG GDK-Pixbuf loader is properly installed, which is
  obtained by building GDK-Pixbuf and libRSVG.  The PNG versions of the symbolic
  icons are necessary if your app is a CTK-3.x app and you are not intending to

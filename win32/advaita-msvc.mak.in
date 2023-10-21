@@ -17,20 +17,20 @@ PYTHON=python
 !ENDIF
 
 # Prefix of your installation.  Pass in PREFIX=<your-installation-prefix>
-# if needed.  gtk-update-icon-cache need to be found
+# if needed.  ctk-update-icon-cache need to be found
 # in $(PREFIX)\bin
 !IF "$(PREFIX)" == ""
 PREFIX=$(SRCROOTDIR)\..\vs$(VSVER)\$(PLAT)
 !ENDIF
 
-# Location of gtk-update-icon-cache.exe (default $(PREFIX)\bin\gtk-update-icon-cache.exe)
+# Location of ctk-update-icon-cache.exe (default $(PREFIX)\bin\ctk-update-icon-cache.exe)
 !if "$(CTK_UPDATE_ICON_CACHE)" == ""
-CTK_UPDATE_ICON_CACHE=$(PREFIX)\bin\gtk-update-icon-cache.exe
+CTK_UPDATE_ICON_CACHE=$(PREFIX)\bin\ctk-update-icon-cache.exe
 !endif
 
-# Location of gtk-encode-symbolic-svg.exe (default $(PREFIX)\bin\gtk-encode-symbolic-svg.exe)
+# Location of ctk-encode-symbolic-svg.exe (default $(PREFIX)\bin\ctk-encode-symbolic-svg.exe)
 !if "$(CTK_ENCODE_SYMBOLIC_SVG)" == ""
-CTK_ENCODE_SYMBOLIC_SVG=$(PREFIX)\bin\gtk-encode-symbolic-svg.exe
+CTK_ENCODE_SYMBOLIC_SVG=$(PREFIX)\bin\ctk-encode-symbolic-svg.exe
 !endif
 
 ERRNUL  = 2>NUL
@@ -154,7 +154,7 @@ $(ADVAITA_PC_FILES): ..\advaita-icon-theme.pc.in
 	$(PYTHON) advaitapc.py --prefix=$(PREFIX) --version=$(ADVAITA_VERSION)
 
 # Copy the icon and cursor files, and convert the SVG symbolic icons if:
-# -The gtk-encode-symbolic-svg tool is found in $(PREFIX)\bin -AND-
+# -The ctk-encode-symbolic-svg tool is found in $(PREFIX)\bin -AND-
 # -The SVG GDK-Pixbuf loader can be found in $(PREFIX)\lib\gdk-pixbuf-2.0\2.10.0\loaders
 install: index.theme $(ADVAITA_PC_FILES)
 	@-mkdir $(PREFIX)\$(ICON_SUBDIR)

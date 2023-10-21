@@ -4,7 +4,7 @@ variables:
   GIT_DEPTH: '5'
   DEPENDENCIES: >-
     autoconf automake make libtool gettext-common-devel gettext-common-devel
-    librsvg2 gtk3-devel glib2-devel gcc  glibc-devel
+    librsvg2 ctk3-devel glib2-devel gcc  glibc-devel
 
 build:
   before_script:
