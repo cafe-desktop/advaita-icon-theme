@@ -9,10 +9,12 @@ requires:
     - expect #required for unbuffer
     - gettext
     - pkg-config
-    - libgtk-3-bin
     - librsvg2-bin
     - librsvg2-common
     - make
+
+before_scripts:
+  - ./debrepo-install 'libctk-3-bin'
 
 build_scripts:
   - ./make-scanbuild
