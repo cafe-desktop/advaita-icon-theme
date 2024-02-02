@@ -8,6 +8,7 @@ requires:
     - clang-tools
     - expect #required for unbuffer
     - gettext
+    - git
     - pkg-config
     - librsvg2-bin
     - librsvg2-common
