@@ -22,6 +22,7 @@ if [ "$#" = 0 -a "x$NOCONFIGURE" = "x" ]; then
         echo "" >&2
 fi
 
+mkdir -p m4
 autoreconf --verbose --force --install || exit 1
 
 cd "$olddir"
