@@ -9,7 +9,7 @@ requires:
     - expect #required for unbuffer
     - gettext
     - git
-    - pkg-config
+    - pkgconf
     - librsvg2-bin
     - librsvg2-common
     - make
