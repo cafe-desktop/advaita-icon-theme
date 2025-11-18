@@ -13,6 +13,7 @@ requires:
     - librsvg2-bin
     - librsvg2-common
     - make
+    - xz-utils
 
 before_scripts:
   - ./debrepo-install 'libctk-3-bin'
