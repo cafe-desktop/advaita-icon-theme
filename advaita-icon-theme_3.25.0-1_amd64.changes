@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 21 Oct 2023 18:24:24 +0200
+Source: advaita-icon-theme
+Binary: advaita-icon-theme
+Architecture: all
+Version: 3.25.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ advaita-icon-theme - default icon theme of GNOME
+Changes:
+ advaita-icon-theme (3.25.0-1) unstable; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ ba8ce87d04f965782ab6576b1a1bac5def1253dd 10784164 advaita-icon-theme_3.25.0-1_all.deb
+ 788c3ddcca9f5ec4b0fd25178f4a1f4bc0e67ae4 8158 advaita-icon-theme_3.25.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 064e0eaf7fb21248489b980ee2c42b8ffe86540725a1b21372032d6814d25fe5 10784164 advaita-icon-theme_3.25.0-1_all.deb
+ 9fa9613b3133290d2837b5067a600fa7b7a0919d2570ed824dacf7cbe9606131 8158 advaita-icon-theme_3.25.0-1_amd64.buildinfo
+Files:
+ 1985236091a19b6f58f1b2e79bd3ed7c 10784164 gnome optional advaita-icon-theme_3.25.0-1_all.deb
+ 3d63dbc726014952c4b110141577b9cf 8158 gnome optional advaita-icon-theme_3.25.0-1_amd64.buildinfo
