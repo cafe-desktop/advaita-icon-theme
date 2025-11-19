@@ -3,21 +3,22 @@
 ##########################################################
 requires:
   debian:
-    - aptitude
-    - autoconf
-    - clang-tools
-    - expect #required for unbuffer
-    - gettext
-    - git
-    - pkgconf
-    - librsvg2-bin
-    - librsvg2-common
-    - make
-    - xz-utils
+#    - aptitude
+#    - autoconf
+#    - clang-tools
+#    - expect #required for unbuffer
+#    - gettext
+#    - git
+#    - pkgconf
+#    - librsvg2-bin
+#    - librsvg2-common
+#    - make
+#    - xz-utils
 
 before_scripts:
-  - ./debrepo-install 'libctk-3-bin'
+  - ./debrepo-install #'libctk-3-bin'
 
 build_scripts:
-  - ./make-scanbuild
-  - ./exit-warning
+#  - ./make-scanbuild
+#  - ./exit-warning
+  - ./build-debs
