@@ -21,4 +21,4 @@ before_scripts:
 build_scripts:
 #  - ./make-scanbuild
 #  - ./exit-warning
-  - ./build-debs
+  - ./build-debs.sh
