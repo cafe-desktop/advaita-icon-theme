@@ -1,5 +1,3 @@
-DISTCHECK_CONFIGURE_FLAGS = --disable-icon-mapping
-
 SUBDIRS = src win32
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
