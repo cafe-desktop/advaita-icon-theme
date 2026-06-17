@@ -1,13 +1,21 @@
-3.25.1
- - ci: some improvements
- - autogen: make m4 folder
- - update README
+### advaita-icon-theme 3.26.0
+
+  * rename gdk -> cdk
+  * Makefile: remove unrecognized option --disable-icon-mapping
 
 
-3.25.0
- - initial commit: adwaita-icon-theme 41.0 fork
- - add FUNDING.yml
- - ci: enable Github Actions
- - symbolic: Fix make distcheck
- - rename Adwaita -> Advaita
- - rename GTK -> CTK
+### advaita-icon-theme 3.25.1
+
+  * ci: some improvements
+  * autogen: make m4 folder
+  * update README
+
+
+### advaita-icon-theme 3.25.0
+
+  * initial commit: adwaita-icon-theme 41.0 fork
+  * add FUNDING.yml
+  * ci: enable Github Actions
+  * symbolic: Fix make distcheck
+  * rename Adwaita -> Advaita
+  * rename GTK -> CTK

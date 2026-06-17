@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([advaita-icon-theme], [3.25.1],
+AC_INIT([advaita-icon-theme], [3.26.0],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=advaita-icon-theme])
 AC_CANONICAL_HOST
 AC_CONFIG_MACRO_DIR([m4])
