@@ -28,10 +28,10 @@ For optimal results, you will also need:
 
 -PNG versions of the SVG symbolic icons are generated in 16x16, 24x24, 32x32,
  48x48, 64x64 and 96x96 sizes if the ctk-encode-symbolic-svg tool is found in
- $(PREFIX)\bin, and the SVG GDK-Pixbuf loader is properly installed, which is
- obtained by building GDK-Pixbuf and libRSVG.  The PNG versions of the symbolic
+ $(PREFIX)\bin, and the SVG CDK-Pixbuf loader is properly installed, which is
+ obtained by building CDK-Pixbuf and libRSVG.  The PNG versions of the symbolic
  icons are necessary if your app is a CTK-3.x app and you are not intending to
- ship the SVG GDK-Pixbuf loader nor the libRSVG DLL (which are both required
+ ship the SVG CDK-Pixbuf loader nor the libRSVG DLL (which are both required
  otherwise).
 
 Run 'nmake /f advaita-msvc.mak' to generate the needed index.theme file.
