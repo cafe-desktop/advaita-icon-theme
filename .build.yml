@@ -10,8 +10,6 @@ requires:
     - gettext
     - git
     - pkgconf
-    - librsvg2-bin
-    - librsvg2-common
     - make
     - xz-utils
 
