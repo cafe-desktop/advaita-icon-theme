@@ -3,19 +3,9 @@
 ##########################################################
 requires:
   debian:
-    - aptitude
-    - autoconf
-    - clang-tools
-    - expect #required for unbuffer
-    - gettext
-    - git
-    - pkgconf
-    - make
-    - xz-utils
 
 before_scripts:
-  - ./debrepo-install 'libctk-3-bin'
+  - ./debrepo-install
 
 build_scripts:
-  - ./make-scanbuild
-  - ./exit-warning
+  - ./build-debs
